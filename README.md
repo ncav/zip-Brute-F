@@ -1,0 +1,5 @@
+-f <zipfile> 
+-c <charset> (CHAR SET BEING abcdefg123ABC) OR -w wordlist
+-m <min_length> 
+-M <max_length> 
+-v verbose
