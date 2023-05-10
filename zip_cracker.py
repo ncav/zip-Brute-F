@@ -5,6 +5,7 @@ import itertools
 import zipfile
 import zlib
 import argparse
+from zipfile import BadZipFile
 
 class Cracker:
     def __init__(self, zip_file, charset=None, min_length=None, max_length=None, wordlist=None, verbose=False):
@@ -21,7 +22,7 @@ class Cracker:
             self.zip_file.extractall(pwd=bytes(password, 'utf-8'))
             print(f"Password found: {password}")
             self.found = True
-        except (RuntimeError, zlib.error):
+        except (RuntimeError, zlib.error, zipfile.BadZipFile):
             if self.verbose:
                 print(f"Trying password: {password}")
 
