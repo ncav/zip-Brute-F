@@ -11,6 +11,12 @@ This zip cracker can go through a wordlist, or you can set the character limits 
   
   
 -m <min_length>
+  
+  
+  
 -M <max_length> 
+  
+  
+  
 -v verbose
 
