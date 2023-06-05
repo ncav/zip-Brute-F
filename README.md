@@ -2,7 +2,7 @@ This zip cracker can go through a wordlist, or you can set the character limits 
 
 -f <zipfile> 
 -c <charset> (ex 0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~)
--w Wordlist 
--m <min_length> 
--M <max_length> 
+-w Wordlist \n
+-m <min_length> \n 
+-M <max_length>  \n
 -v verbose
